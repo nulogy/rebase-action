@@ -1,8 +1,8 @@
 FROM alpine:latest
 
 LABEL version="1.0.0"
-LABEL repository="http://github.com/nulogy/packmanager"
-LABEL homepage="http://github.com/nulogy/packmanager"
+LABEL repository="http://github.com/nulogy/rebase-action"
+LABEL homepage="http://github.com/nulogy/rebase-action"
 LABEL maintainer="Nulogy Engineering"
 LABEL "com.github.actions.name"="Rebase"
 LABEL "com.github.actions.description"="Rebase a PR on '/rebase' comment"
