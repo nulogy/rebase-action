@@ -55,6 +55,9 @@ if [[ "$BASE_REPO" != "$HEAD_REPO" ]]; then
   exit 1
 fi
 
+# See: https://github.com/cirrus-actions/rebase/blob/master/entrypoint.sh#L86, https://github.com/actions/checkout/issues/766
+git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
 git remote set-url origin https://x-access-token:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git
 git config --global user.email "action@github.com"
 git config --global user.name "GitHub Action"
